@@ -91,7 +91,7 @@ class NavigationDrawer extends StatelessWidget {
                 image: DecorationImage(image: AssetImage("assets/images/20210912_081803.jpg"))
               ),
             ),
-             Text("MeetRead", style: TextStyle(color: Colors.white, fontSize: 20),),
+             Text("Chelsea App", style: TextStyle(color: Colors.white, fontSize: 20),),
             Text("oluwafisayomiogunyemi@gmail.com", style: TextStyle(color: Colors.blueGrey, fontSize: 14),)
           ],
         ),
