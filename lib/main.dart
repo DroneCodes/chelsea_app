@@ -11,10 +11,10 @@ void main() {
 }
 
 final List<String> imgList = [
-  'assets/images/draw.jpg'
-      'assets/images/tuchel.jpg'
-      'assets/images/azpili.jpg'
-      'assets/images/coaches.jpg'
+  "assets/images/draw.jpg"
+      "assets/images/tuchel.jpg"
+      "assets/images/azpili.jpg"
+      "assets/images/coaches.jpg"
 ];
 
 final List<String> news = [
@@ -56,7 +56,7 @@ class Home extends StatelessWidget {
                           width: 1000,
                         ),
                       ))
-                  .toList(),
+                  .toList(), 
               options: CarouselOptions(
                 autoPlay: true,
                 aspectRatio: 2.0,
