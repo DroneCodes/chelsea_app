@@ -1,5 +1,6 @@
 import 'package:chelsea_app/home.dart';
 import 'package:chelsea_app/main.dart';
+import 'package:chelsea_app/players/players.dart';
 import 'package:chelsea_app/players/playersapi.dart';
 import 'package:flutter/material.dart';
 
@@ -89,7 +90,7 @@ class NavigationDrawer extends StatelessWidget {
         break;
       case 1:
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => PlayersApi(age: '20', imageUrl: 'assets/images/20210912_081803.jpg', name: 'Fisayo', number: '10', )));
+            context, MaterialPageRoute(builder: (context) => Players()));
         break;
       default:
         Navigator.pop(context);
@@ -108,19 +109,16 @@ class NavigationDrawer extends StatelessWidget {
         children: [
           Container(
             margin: EdgeInsets.only(bottom: 10),
-            height: 70,
-            decoration: BoxDecoration(
+            height: 140,
+            decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                    image: AssetImage("assets/images/20210912_081803.jpg"))),
+                    image: AssetImage("assets/images/logo.png"))),
           ),
+          // ignore: prefer_const_constructors
           Text(
             "Chelsea App",
             style: TextStyle(color: Colors.white, fontSize: 20),
-          ),
-          Text(
-            "oluwafisayomiogunyemi@gmail.com",
-            style: TextStyle(color: Colors.blueGrey, fontSize: 14),
           )
         ],
       ),

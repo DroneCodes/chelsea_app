@@ -11,8 +11,8 @@ void main() {
 }
 
 final List<String> imgList = [
-  "assets/images/draw.jpg"
-      "assets/images/tuchel.jpg"
+      "https://images.unsplash.com/photo-1614632537190-23e4146777db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhbXBpb25zJTIwbGVhZ3VlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+      "https://images.unsplash.com/photo-1606470542032-a9caa0be6e97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c29jY2VyJTIwY29hY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60"
       "assets/images/azpili.jpg"
       "assets/images/coaches.jpg"
 ];
@@ -50,7 +50,7 @@ class Home extends StatelessWidget {
             CarouselSlider(
               items: imgList
                   .map((item) => Container(
-                        child: Image.asset(
+                        child: Image.network(
                           item,
                           fit: BoxFit.cover,
                           width: 1000,
